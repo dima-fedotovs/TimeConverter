@@ -1,0 +1,69 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<?import java.lang.String?>
+<GridPane hgap="16" vgap="16" fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <padding>
+        <Insets bottom="16" right="16"/>
+    </padding>
+    <GridPane vgap="2" hgap="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Label text="Departure" styleClass="header"
+               GridPane.columnIndex="1"
+               GridPane.rowIndex="1"
+               GridPane.columnSpan="2"/>
+        <Label text="Time Zone"
+               GridPane.columnIndex="1"
+               GridPane.rowIndex="2"
+               GridPane.columnSpan="2"/>
+        <ComboBox fx:id="departureTimeZone"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="3"
+                GridPane.columnSpan="2"/>
+        <Label text="Date"
+               GridPane.columnIndex="1"
+               GridPane.rowIndex="4"/>
+        <Label text="Time"
+               GridPane.columnIndex="2"
+               GridPane.rowIndex="4"/>
+        <TextField fx:id="departureDate"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="5"/>
+        <TextField
+                GridPane.columnIndex="2"
+                GridPane.rowIndex="5"/>
+    </GridPane>
+    <GridPane vgap="2" hgap="5" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <Label text="Destination" styleClass="header"
+               GridPane.columnIndex="1"
+               GridPane.rowIndex="1"
+               GridPane.columnSpan="2"/>
+        <Label text="Time Zone"
+               GridPane.columnIndex="1"
+               GridPane.rowIndex="2"
+               GridPane.columnSpan="2"/>
+        <ComboBox fx:id="destinationTimeZone"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="3"
+                GridPane.columnSpan="2"/>
+        <Label text="Date"
+               GridPane.columnIndex="1"
+               GridPane.rowIndex="4"/>
+        <Label text="Time"
+               GridPane.columnIndex="2"
+               GridPane.rowIndex="4"/>
+        <TextField
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="5"/>
+        <TextField
+                GridPane.columnIndex="2"
+                GridPane.rowIndex="5"/>
+    </GridPane>
+    <Button text="Calculate" onAction="#calculate"
+            GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <TextField fx:id="result" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+    <stylesheets>
+        <URL value="@sample.css"/>
+    </stylesheets>
+</GridPane>
