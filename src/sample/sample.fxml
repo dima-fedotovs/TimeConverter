@@ -30,7 +30,7 @@
         <TextField fx:id="departureDate"
                 GridPane.columnIndex="1"
                 GridPane.rowIndex="5"/>
-        <TextField
+        <TextField fx:id="departureTime"
                 GridPane.columnIndex="2"
                 GridPane.rowIndex="5"/>
     </GridPane>
@@ -53,10 +53,10 @@
         <Label text="Time"
                GridPane.columnIndex="2"
                GridPane.rowIndex="4"/>
-        <TextField
+        <TextField fx:id="destinationDate"
                 GridPane.columnIndex="1"
                 GridPane.rowIndex="5"/>
-        <TextField
+        <TextField fx:id="destinationTime"
                 GridPane.columnIndex="2"
                 GridPane.rowIndex="5"/>
     </GridPane>
